@@ -1,0 +1,65 @@
+/* Colors
+
+background-color: rgb(236, 253, 245);
+background-color: rgb(209, 250, 229);
+background-color: rgb(167, 243, 208);
+background-color: rgb(110, 231, 183); 
+background-color: rgb(52, 211, 153); 
+background-color: rgb(16, 185, 129);
+background-color: rgb(5, 150, 105); 
+background-color: rgb(4, 120, 87);
+background-color: rgb(6, 95, 70);
+background-color: rgb(6, 78, 59);
+background-color: rgb(2, 44, 34);
+
+*/
+ 
+* {
+    font-family: 'Oswald', sans-serif;
+    color: rgb(110, 231, 183);
+}
+
+body {
+    margin: 0 auto;
+    padding: 0;
+    background-color: rgb(4, 120, 87);
+}
+
+@keyframes background-pan {
+    from {
+        background-position: 0% center;
+    }
+
+    to {
+        background-position: -200% center;
+    }
+}
+.navbar {
+    background-color: black;
+    height: 4rem;
+    position: sticky;
+}
+.section1 {
+    height: 50vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.section1 h1 {
+font-size: 3rem;
+margin: 0 auto;
+}
+.section1 span {
+    font-size: 1.5rem;
+}
+.section1 .matrix {
+    animation: background-pan 4s linear infinite;
+    margin: 0 auto;
+    font-size: 1.5rem;
+    background: linear-gradient(to right,rgb(52, 211, 153),rgb(110, 231, 183), rgba(255, 255, 255, .9));
+    background-size: 200%;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    white-space: nowrap;
+}
