@@ -35,7 +35,7 @@ body {
     }
 }
 .navbar {
-    background-color: black;
+    background-image: linear-gradient(to bottom, rgba(0,0,0,1),rgba(0,0,0,0));
     height: 4rem;
     position: sticky;
 }
@@ -62,4 +62,14 @@ margin: 0 auto;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     white-space: nowrap;
+}
+.s1,.s2,.s3,.s4 {
+    height: 50vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.s1,.s2,.s3,.s4 h2 {
+    font-size: 30px;
 }
