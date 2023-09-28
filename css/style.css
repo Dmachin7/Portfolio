@@ -19,6 +19,10 @@ background-color: rgb(2, 44, 34);
     color: rgb(110, 231, 183);
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     margin: 0 auto;
     padding: 0;
@@ -35,9 +39,17 @@ body {
     }
 }
 .navbar {
-    background-image: linear-gradient(to bottom, rgba(0,0,0,1),rgba(0,0,0,0));
-    height: 4rem;
-    position: sticky;
+    background-color: rgb(110, 231, 183);
+    width: 100vw;
+    height: 2rem;
+    position: fixed;
+    z-index: 2;
+}
+.navbar a {
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+    padding: .5rem;
 }
 .section1 {
     height: 50vh;
@@ -49,6 +61,7 @@ body {
 .section1 h1 {
 font-size: 3rem;
 margin: 0 auto;
+padding: 0;
 }
 .section1 span {
     font-size: 1.5rem;
@@ -64,12 +77,9 @@ margin: 0 auto;
     white-space: nowrap;
 }
 .s1,.s2,.s3,.s4 {
-    height: 50vh;
+    height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-.s1,.s2,.s3,.s4 h2 {
-    font-size: 30px;
-}
