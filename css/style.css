@@ -26,7 +26,7 @@ html {
 body {
     margin: 0 auto;
     padding: 0;
-    background-color: rgb(4, 120, 87);
+    background-color: black;
 }
 
 @keyframes background-pan {
@@ -39,17 +39,24 @@ body {
     }
 }
 .navbar {
-    background-color: rgb(110, 231, 183);
+    background: linear-gradient(to right,rgb(52, 211, 153),rgb(110, 231, 183), rgba(255, 255, 255, .8));
     width: 100vw;
-    height: 2rem;
+    height: 4rem;
     position: fixed;
     z-index: 2;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
 }
 .navbar a {
     color: white;
     text-decoration: none;
     font-size: 20px;
-    padding: .5rem;
+    padding: 1rem;
+}
+
+#top p {
+    font-size: 3rem;
 }
 .section1 {
     height: 50vh;
@@ -69,7 +76,7 @@ padding: 0;
 .section1 .matrix {
     animation: background-pan 4s linear infinite;
     margin: 0 auto;
-    font-size: 1.5rem;
+    font-size: 3rem;
     background: linear-gradient(to right,rgb(52, 211, 153),rgb(110, 231, 183), rgba(255, 255, 255, .9));
     background-size: 200%;
     -webkit-background-clip: text;
@@ -83,3 +90,24 @@ padding: 0;
     align-items: center;
 }
 
+#top h1 {
+    color: white;
+    font-size: 5rem;
+}
+
+@media (max-width: 500px) {
+    .navbar a {
+        font-size: 10px;
+    }
+
+    #top h1 {
+        font-size: 3rem;
+    }
+    .section1 .matrix {
+        font-size: 1.5rem;
+    }
+
+    #top p {
+        font-size: 1.5rem;
+    }
+}
