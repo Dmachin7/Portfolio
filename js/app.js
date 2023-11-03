@@ -36,3 +36,8 @@ toggleButton.addEventListener('click', () => {
   navBar.classList.toggle('active')
 })
 
+window.onscroll(() => {
+    navbarLinks.classList.toggle('active')
+    navBar.classList.toggle('active')
+})
+
