@@ -147,6 +147,10 @@ padding: 0;
     overflow: hidden;
 }
 
+.show {
+    display: flex;
+}
+
 
 /* MEDIA QUERY FOR PHONE SCREENS */
 @media (max-width: 500px) {
@@ -222,6 +226,13 @@ padding: 0;
         position: fixed;
         bottom: 1rem;
         display: flex;
+        left: 50%;
+        transform: translateX(-50%);
+        text-decoration: none;
+        padding: 1rem;
+        border-radius: 10px;
+        background-color: rgba(6, 78, 59, .3);
+        outline: none;
     }
 
 
@@ -240,6 +251,14 @@ padding: 0;
         position: fixed;
         bottom: 1rem;
         display: flex;
+        left: 50%;
+        transform: translateX(-50%);
+        text-decoration: none;
+        padding: 1rem;
+        border-radius: 10px;
+        background-color: rgba(6, 78, 59, .3);
+        outline: none;
     }
+    
 
 }
