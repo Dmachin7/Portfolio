@@ -54,6 +54,7 @@ body {
     color: white;
 }
 
+
 .top {
     display: none;
 }
@@ -142,6 +143,10 @@ padding: 0;
     background-color: white;
 }
 
+.lock-scroll {
+    overflow: hidden;
+}
+
 
 /* MEDIA QUERY FOR PHONE SCREENS */
 @media (max-width: 500px) {
@@ -216,7 +221,6 @@ padding: 0;
     .top {
         position: fixed;
         bottom: 1rem;
-        font-size: 10px;
         display: flex;
     }
 
@@ -235,7 +239,6 @@ padding: 0;
     .top {
         position: fixed;
         bottom: 1rem;
-        font-size: 10px;
         display: flex;
     }
 

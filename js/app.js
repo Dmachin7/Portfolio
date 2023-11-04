@@ -61,4 +61,8 @@ navbarLinks.addEventListener('click', () => {
     navBar.classList.toggle('active')
 })
 
+const lockScroll = () => {
+    document.body.classList.toggle('lock-scroll')
+}
+
 
