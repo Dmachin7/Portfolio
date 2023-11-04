@@ -53,6 +53,10 @@ body {
     align-items: center;
     color: white;
 }
+
+.top {
+    display: none;
+}
 .navbar-links {
     height: 100%;
 }
@@ -164,10 +168,15 @@ padding: 0;
         font-size: 2rem;
     }
 
-  
-
     .toggle-button {
         display: flex;
+        justify-content: space-between;
+    }
+    .site-title {
+        position: fixed;
+        left: 1rem;
+        top: 1.3rem;
+        color: white;
     }
 
     .navbar-links {
@@ -191,8 +200,6 @@ padding: 0;
         background: rgba(0, 0, 0, .7);
         backdrop-filter: blur(2px);
     }
-
-
 
     .toggle-button {
         display: flex;
@@ -218,6 +225,13 @@ padding: 0;
         display: flex;
     }
 
+    .top {
+        position: fixed;
+        bottom: 1rem;
+        font-size: 10px;
+        display: flex;
+    }
+
 
 
 }
@@ -230,4 +244,11 @@ padding: 0;
         font-size: 1.5rem;
     }
   
+    .top {
+        position: fixed;
+        bottom: 1rem;
+        font-size: 10px;
+        display: flex;
+    }
+
 }
