@@ -152,6 +152,8 @@ padding: 0;
 }
 
 
+
+
 /* MEDIA QUERY FOR PHONE SCREENS */
 @media (max-width: 500px) {
     .navbar a {
@@ -239,8 +241,26 @@ padding: 0;
     .show {
         display: none;
     }
+    .outer {
+        width: 80%;
+        /* outline: 1px solid blue; */
+    }
+    .inner {
+        width: 100%;
+        /* outline: 1px solid red; */
+        padding: 1rem;
+    }
 
-
+   
+    .inner-container li {
+        list-style: none;
+    }
+    .inner-container {
+        display: none;
+    }
+    .display {
+        display: flex;
+    }
 
 }
 
@@ -268,5 +288,20 @@ padding: 0;
         display: none;
     }
     
+    .outer {
+        width: 80%;
+        /* outline: 1px solid blue; */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .inner {
+        width: 100%;
+        /* outline: 1px solid red; */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
 
 }
