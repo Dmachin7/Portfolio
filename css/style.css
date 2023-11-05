@@ -148,7 +148,7 @@ padding: 0;
 }
 
 .show {
-    display: flex;
+    display: none;
 }
 
 
@@ -225,7 +225,7 @@ padding: 0;
     .top {
         position: fixed;
         bottom: 1rem;
-        display: flex;
+        display: none;
         left: 50%;
         transform: translateX(-50%);
         text-decoration: none;
@@ -233,6 +233,10 @@ padding: 0;
         border-radius: 10px;
         background-color: rgba(6, 78, 59, .3);
         outline: none;
+    }
+
+    .show {
+        display: none;
     }
 
 
@@ -250,7 +254,7 @@ padding: 0;
     .top {
         position: fixed;
         bottom: 1rem;
-        display: flex;
+        display: none;
         left: 50%;
         transform: translateX(-50%);
         text-decoration: none;
@@ -258,6 +262,9 @@ padding: 0;
         border-radius: 10px;
         background-color: rgba(6, 78, 59, .3);
         outline: none;
+    }
+    .show {
+        display: none;
     }
     
 
