@@ -95,6 +95,9 @@ toggleButton.addEventListener('click', () => {
   })
   
   const lockScroll = () => {
-      document.body.classList.toggle('lock-scroll')
+    if(window.innerWidth < 500) {
+        document.body.classList.toggle('lock-scroll')
+    }
   }
+
   

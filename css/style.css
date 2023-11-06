@@ -154,24 +154,57 @@ padding: 0;
 .outer {
     width: 80%;
     /* outline: 1px solid blue; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transition: 200ms ease-in-out;
 }
 .inner {
     width: 100%;
     /* outline: 1px solid red; */
-    padding: 1rem;
+    background-color: rgba(6, 78, 59, .3);
+    transition: 200ms ease-in-out;
 }
 
 
-.inner-container li {
+.inner-container img {
     list-style: none;
+    width: 70%;
+    padding: .5rem;
 }
 .inner-container {
     display: none;
+    width: 100%;
+    overflow: hidden;
+    padding: 0;
+    transition: 200ms ease-in-out;
+
 }
 .display {
-    display: flex;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    margin: 0 auto;
+    padding: 0;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    /* outline: 2px green solid; */
+    transition: 200ms ease-in-out;
 }
-
+.top {
+    position: fixed;
+    bottom: 1rem;
+    display: none;
+    left: 50%;
+    transform: translateX(-50%);
+    text-decoration: none;
+    padding: 1rem;
+    border-radius: 10px;
+    background-color: rgba(6, 78, 59, .3);
+    outline: none;
+}
 
 /* MEDIA QUERY FOR PHONE SCREENS */
 @media (max-width: 500px) {
@@ -306,20 +339,47 @@ padding: 0;
     .show {
         display: none;
     }
-    
     .outer {
         width: 80%;
         /* outline: 1px solid blue; */
         display: flex;
+        flex-direction: column;
         justify-content: center;
         align-items: center;
+        transition: 200ms ease-in-out;
     }
     .inner {
         width: 100%;
         /* outline: 1px solid red; */
-        display: flex;
+        background-color: rgba(6, 78, 59, .3);
+        transition: 200ms ease-in-out;
+    }
+
+   
+    .inner-container img {
+        list-style: none;
+        width: 70%;
+        padding: .5rem;
+    }
+    .inner-container {
+        display: none;
+        width: 100%;
+        overflow: hidden;
+        padding: 0;
+        transition: 200ms ease-in-out;
+
+    }
+    .display {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        margin: 0 auto;
+        padding: 0;
+        width: 100%;
         justify-content: center;
         align-items: center;
+        /* outline: 2px green solid; */
+        transition: 200ms ease-in-out;
     }
 
 
