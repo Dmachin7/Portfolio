@@ -99,5 +99,3 @@ toggleButton.addEventListener('click', () => {
         document.body.classList.toggle('lock-scroll')
     }
   }
-
-  
