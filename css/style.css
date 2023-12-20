@@ -182,6 +182,39 @@ padding: 0;
     transition: 200ms ease-in-out;
 }
 
+.foodle {
+    background-image: url(../assets/Foodle.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.twisted {
+    background-image: url(../assets/twisted.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.adventure {
+    background-image: url(../assets/adventure.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.fitfolio {
+    background-image: url(../assets/fitfolio.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+
+.foodle:hover {
+opacity: .7;
+}
+
 .display {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
